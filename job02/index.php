@@ -123,4 +123,34 @@ class Category {
     private string $description;
     private DateTime $created_at;
     private DateTime $updated_at;
+
+    // Constructor
+    public function __construct(int $id, string $name, string $description, DateTime $created_at, DateTime $updated_at) {
+        $this->id = $id;
+        $this->name = $name;
+        $this->description = $description;
+        $this->created_at = $created_at;
+        $this->updated_at = $updated_at;
+    }
+
+    // Getters
+    public function getId(): int {
+        return $this->id;
+    }
+
+    public function getName(): string {
+        return $this->name;
+    }
+
+    public function getDescription(): string {
+        return $this->description;
+    }
+
+    public function getCreatedAt(): DateTime {
+        return $this->created_at;
+    }
+
+    public function getUpdatedAt(): DateTime {
+        return $this->updated_at;
+    }
 }
