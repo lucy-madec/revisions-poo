@@ -10,6 +10,7 @@ class Product {
     private int $quantity;
     private DateTime $created_at;
     private DateTime $updated_at;
+    private int $category_id;
 
     // Constructor
     public function __construct(int $id, string $name, array $photos, int $price, string $description, int $quantity, DateTime $created_at, DateTime $updated_at) {
@@ -21,6 +22,7 @@ class Product {
         $this->quantity = $quantity;
         $this->created_at = $created_at;
         $this->updated_at = $updated_at;
+        $this->category_id = $category_id;
     }
 
     // Getters
