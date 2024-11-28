@@ -103,7 +103,7 @@ class Product {
 }
 
 // Creation of a new product
-$product = new Product(1, "T-shirt", ["https://via.placeholder.com/150"], 1000, "Description of product 1", 10, new DateTime(), new DateTime());
+$product = new Product(1, "T-shirt", ["https://via.placeholder.com/150"], 1000, "Description of product 1", 10, new DateTime(), new DateTime(), 1);
 
 // Verify the initials values with the getters
 var_dump($product->getId());
@@ -114,7 +114,7 @@ var_dump($product->getDescription());
 var_dump($product->getQuantity());
 var_dump($product->getCreatedAt());
 var_dump($product->getUpdatedAt());
-
+var_dump($product->getCategoryId());
 // Modify the product
 $product->setName("New T-shirt Name");
 $product->setPrice(1200);
