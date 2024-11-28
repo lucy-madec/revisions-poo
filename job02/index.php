@@ -153,4 +153,21 @@ class Category {
     public function getUpdatedAt(): DateTime {
         return $this->updated_at;
     }
+
+    // Setters
+    public function setName(string $name): void {
+        $this->name = $name;
+    }
+
+    public function setDescription(string $description): void {
+        $this->description = $description;
+    }
+
+    public function setCreatedAt(DateTime $created_at): void {
+        $this->created_at = $created_at;
+    }
+
+    public function setUpdatedAt(DateTime $updated_at): void {
+        $this->updated_at = $updated_at;
+    }
 }
