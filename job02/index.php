@@ -58,6 +58,10 @@ class Product {
         return $this->updated_at;
     }
 
+    public function getCategoryId(): int {
+        return $this->category_id;
+    }
+
     // Setters
     public function setName(string $name): void {
         $this->name = $name;
@@ -91,6 +95,10 @@ class Product {
 
     public function setUpdatedAt(DateTime $updated_at): void {
         $this->updated_at = $updated_at;
+    }
+
+    public function setCategoryId(int $category_id): void {
+        $this->category_id = $category_id;
     }
 }
 
