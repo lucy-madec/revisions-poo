@@ -1,0 +1,11 @@
+{
+    "name": "lucym/revisions-poo",
+    "description": "Product management project with POO",
+    "authors": [
+        {
+            "name": "Lucy",
+            "email": "lucy.madec@laplateforme.io"
+        }
+    ],
+    "require": {}
+}
