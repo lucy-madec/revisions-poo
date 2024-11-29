@@ -7,5 +7,10 @@
             "email": "lucy.madec@laplateforme.io"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
 }
